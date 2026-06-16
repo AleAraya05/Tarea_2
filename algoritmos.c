@@ -27,35 +27,7 @@ void bubble_sort(int *arr, int n) {
     }
 }
 
-void selection_sort(int *arr, int n) {
-    /* TODO: implementar */
-    (void)arr;
-    (void)n;
-}
-
-void insertion_sort(int *arr, int n) {
-    /* TODO: implementar */
-    (void)arr;
-    (void)n;
-}
-
 /* ── Búsqueda ─────────────────────────────────────────── */
-
-int busqueda_lineal(int *arr, int n, int valor) {
-    /* TODO: implementar */
-    (void)arr;
-    (void)n;
-    (void)valor;
-    return -1;
-}
-
-int busqueda_binaria(int *arr, int n, int valor) {
-    /* TODO: implementar */
-    (void)arr;
-    (void)n;
-    (void)valor;
-    return -1;
-}
 
 int buscar_ocurrencias(int *arr, int n, int valor, int *posiciones) {
     int i;
