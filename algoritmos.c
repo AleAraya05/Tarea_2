@@ -11,11 +11,22 @@
 /* ── Ordenamiento ─────────────────────────────────────── */
 
 void bubble_sort(int *arr, int n) {
+   int i, j;
+   int tmp;
 
-    /* TODO: implementar */
-    (void)arr;
-    (void)n;
+    for (i = 0; i < n - 1; i++) {
+        for (j = 0; j < n - 1 - i; j++) {
+
+            //Si el elemento actual es mayor que el siguiente, se inter>
+            if (*(arr + j) > *(arr + j + 1)) {
+                tmp = *(arr + j);
+                *(arr + j) = *(arr + j + 1);
+                *(arr + j + 1) = tmp;
+            }
+        }
+    }
 }
+
 
 void selection_sort(int *arr, int n) {
     for (int i = 0; i < n - 1; i++) {
@@ -94,23 +105,6 @@ int busqueda_binaria(int *arr, int n, int valor) {
 
     }
     return -1;
-}
-
-int buscar_ocurrencias(int *arr, int n, int valor, int *posiciones) {
-    int i, j;
-    int tmp;
-
-    for (i = 0; i < n - 1; i++) {
-        for (j = 0; j < n - 1 - i; j++) {
-
-            //Si el elemento actual es mayor que el siguiente, se intercambian
-            if (*(arr + j) > *(arr + j + 1)) {
-                tmp = *(arr + j);
-                *(arr + j) = *(arr + j + 1);
-                *(arr + j + 1) = tmp;
-            }
-        }
-    }
 }
 
 /* ── Búsqueda ─────────────────────────────────────────── */
